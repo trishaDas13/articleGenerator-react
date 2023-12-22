@@ -1,12 +1,22 @@
 import "./generator.css";
-// import { useState } from "react";
+import { useState } from "react";
 
 function Header() {
   return (
     <>
       <nav>
-        <h2>📝 Article Generator</h2>
-        <svg width="40" height="40" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+        <h2 
+          onClick={(e) => window.location.reload(false)}
+          style={{cursor:"pointer"}}
+        >📝 Article Generator</h2>
+        <svg 
+          width="40" 
+          height="40" 
+          viewBox="0 0 64 64" 
+          xmlns="http://www.w3.org/2000/svg"
+
+          style={{cursor:"pointer"}}
+        >
             <path fill="#f5eb35" d="M27.576 39.727c1.576-2.194 2.719-4.756.662-7.07c-.882-.994-2.471-1.479-3.65-1.976a11.918 11.918 0 0 1-2.212-1.25c-1.844-4.974-2.795-10.271-1.891-15.474c.907-5.219 3.135-9.535 5.759-13.672C11.81 3.43.994 16.267.994 31.643c0 17.736 14.377 32.11 32.11 32.11c5.898 0 11.407-1.617 16.16-4.393c-8.693-4.891-16.369-11.246-21.689-19.634"/>
             <g fill="#e0cf35">
                 <path d="M8.112 40.18a2.552 2.552 0 0 1-5.106 0a2.553 2.553 0 1 1 5.106 0M36.15 57.34a3.494 3.494 0 0 1-3.498 3.494a3.495 3.495 0 0 1 0-6.991a3.495 3.495 0 0 1 3.498 3.497"/>
